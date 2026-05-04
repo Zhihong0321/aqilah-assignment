@@ -47,6 +47,7 @@ Each assignment follows this format:
 
 | Period | Focus | Assignment |
 | --- | --- | --- |
+| Days 1-7 | Local Docker Postgres notes app (beginner bridge) | `assignments/00-local-notes-postgres.md` |
 | Days 1-7 | Codex basics and repo mapping | `assignments/01-codex-repo-map.md` |
 | Days 8-14 | GitHub workflow and safe DevOps | `assignments/02-github-railway-workflow.md` |
 | Days 15-21 | PostgreSQL and migrations | `assignments/03-database-migration-lab.md` |
