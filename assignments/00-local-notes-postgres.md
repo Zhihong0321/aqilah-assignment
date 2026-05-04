@@ -28,11 +28,26 @@ Notes must be stored in **PostgreSQL** (not only in the browser). The page runs 
 - Keep the stack **simple** (for example: plain HTML + a small Node server, or a minimal framework — choose what you can explain).
 - **Before `git push`:** Your app must already work end-to-end on localhost against the Postgres container (add note → refresh → data still there). Pushing first and “fixing Docker later” does not meet this assignment.
 
+## 💡 Beginner Guidance for Aqilah
+
+Here is a quick cheat sheet for the core concepts:
+
+- **Docker Desktop**: A tool that runs "containers". A container is like a tiny, separate computer inside your laptop. We use it to run our database safely.
+- **Postgres (PostgreSQL)**: The database. It acts like a giant spreadsheet where your notes are saved so they don't disappear when you close your app.
+- **Localhost**: Your own computer. Your app lives on `localhost` (not on the internet), meaning only you can see it right now.
+- **Git**: A time machine for your code. It lets you save snapshots (called "commits") of your project as you build it.
+- **GitHub**: A website where you upload your Git saves so others (like your mentor) can see and review your code.
+- **AI (Cursor/Codex)**: Your coding assistant. Ask it questions, but make sure you understand the answers instead of just copying them!
+
 ## Tasks
 
 1. **Plan briefly** (on paper or in `notes.md`): what pages/APIs you need, and how the browser talks to the database (you do not need a perfect diagram — just enough that you can explain it).
 
 2. **Docker Desktop + Postgres (do this before you rely on GitHub):**
+
+   *Useful References:*
+   - 🎥 [Docker in 100 Seconds](https://www.youtube.com/watch?v=Gjnup-PuquQ)
+   - 🎥 [PostgreSQL in 100 Seconds](https://youtu.be/n2Fluyr3lbc)
 
    - Install and start **Docker Desktop** on your machine.
    - Run **PostgreSQL in a container** (compose file, script, or documented `docker` commands — your choice, but it must be reproducible).
@@ -51,11 +66,17 @@ Notes must be stored in **PostgreSQL** (not only in the browser). The page runs 
 
 5. **Version control** (after local Docker + app work):
 
+   *Useful Reference:*
+   - 🎥 [Git in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
+
    - Initialize Git in your project folder (if not already).
    - Commit sensible steps (for example: Docker/compose, server, DB layer, UI — not one giant mystery commit).
    - Include whatever files someone else needs to run Postgres the same way (`docker-compose.yml`, `compose.yaml`, or a clear `README` section — mentor may specify).
 
 6. **GitHub** (only after your **end-to-end localhost demo** works: Docker Desktop → Postgres container → app saving and listing notes):
+
+   *Useful Reference:*
+   - 🎥 [Git and GitHub Tutorial for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
 
    - Create a **new repository** on GitHub (empty repo is fine).
    - Add the remote and **push** your work to `main` (or `master`, consistent with what GitHub shows — ask AI how if unsure).
